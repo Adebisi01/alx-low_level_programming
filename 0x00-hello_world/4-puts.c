@@ -1,6 +1,7 @@
 #include <stdio.h>
 /**
- *The function prints out corresponding string
+ *main - The function prints out corresponding string
+ * Return: 0 by default.
  */
 int main(void)
 {
