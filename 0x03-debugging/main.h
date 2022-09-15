@@ -5,4 +5,4 @@
 
 void positive_or_negative(int i);
 
-#ebdif /* MAIN_H */
+#endif /* MAIN_H */
