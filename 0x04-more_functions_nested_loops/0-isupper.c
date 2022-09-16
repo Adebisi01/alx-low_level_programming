@@ -8,11 +8,11 @@
  */
 int _isupper(int c)
 {
-	if (isupper(c))
+	if (int isupper(c) == 1)
 	{
 		return (1);
 	}
-	else if (!isupper(c))
+	else if (int isupper(c) == 0)
 	{
 		return (0);
 	}
