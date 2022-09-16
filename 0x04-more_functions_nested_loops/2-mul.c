@@ -4,7 +4,7 @@
  * mul - multiplies interger
  * @a: first integer
  * @b: second interger
- * Return - result
+ * Return: result
  */
 int mul(int a , int b)
 {
