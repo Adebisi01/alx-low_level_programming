@@ -8,7 +8,8 @@
 int _atoi(char *s)
 {
 	int i = 0;
-	bool hasDigit = false;
+	int j;
+	int hasDigit = 0;
 
 	while (*(s + i))
 	{
@@ -19,10 +20,10 @@ int _atoi(char *s)
 		if (isdigit(*(s + j)))
 		{
 			printf("%d", *(s + j));
-			hasDigit = true;
+			hasDigit = 1;
 		}
 	}
-	if (hasDigit == false)
+	if (hasDigit == 0)
 	{
 		return (0);
 	}
