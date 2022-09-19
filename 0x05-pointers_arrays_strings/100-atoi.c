@@ -23,5 +23,5 @@ int _atoi(char *s)
 			hasDigit = 1;
 		}
 	}
-	return(hasDigit);i
+	return(hasDigit);
 }
