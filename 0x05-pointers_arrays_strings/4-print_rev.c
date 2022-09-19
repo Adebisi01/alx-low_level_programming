@@ -3,7 +3,6 @@
 /**
  * print_rev - print characters in reverse
  * @s: character
- * @len: character size
  * Return: Nothing
  */
 void print_rev(char *s)
