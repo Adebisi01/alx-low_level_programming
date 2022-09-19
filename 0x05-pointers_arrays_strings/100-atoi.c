@@ -17,7 +17,7 @@ int _atoi(char *s)
 	}
 	for (j = 0; j <= i; j++)
 	{
-		if ((*(s + j)) >= 48 && (*(s + j)) <= 57)
+		if ('(*(s + j))' >= 48 && '(*(s + j))' <= 57)
 		{
 			printf("%d", *(s + j));
 			hasDigit = 1;
