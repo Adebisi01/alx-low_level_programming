@@ -24,7 +24,6 @@ int _atoi(char *s)
 		}
 	}
 	if (hasDigit == 0)
-	{
 		return (0);
-	}
+	
 }
