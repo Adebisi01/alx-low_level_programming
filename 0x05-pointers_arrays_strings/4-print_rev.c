@@ -3,18 +3,15 @@
 /**
  * print_rev - print characters in reverse
  * @s: character
- * @size: character size
+ * @len: character size
  * Return: Nothing
  */
 void print_rev(char *s)
 {
-	int size;
 	int len;
 
 	len = 0;
-
-	size = sizeof(s) - 1;
-	while(*(s + len) != '\0')
+	while (*(s + len) != '\0')
 	{
 		len++;
 	}
@@ -23,6 +20,5 @@ void print_rev(char *s)
 		_putchar((s[len]));
 	}
 	_putchar('\n');
-	
 
 }
