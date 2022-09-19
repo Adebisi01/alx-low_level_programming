@@ -23,7 +23,5 @@ int _atoi(char *s)
 			hasDigit = 1;
 		}
 	}
-	if (hasDigit == 0)
-		return (0);
-	
+	return(hasDigit);
 }
