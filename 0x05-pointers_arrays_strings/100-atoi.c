@@ -11,17 +11,14 @@ int _atoi(char *s)
 	int j;
 	int hasDigit = 0;
 
+	atoi(s);
 	while (*(s + i))
 	{
 		i++;
 	}
 	for (j = 0; j <= i; j++)
 	{
-		if ((*(s + j)) >= '0' && (*(s + j)) <= '9')
-		{
-			printf("%d", *(s + j));
-			hasDigit = 1;
-		}
+		j++;}
 	}
 	return(hasDigit);
 }
