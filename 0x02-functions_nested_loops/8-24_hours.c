@@ -11,7 +11,7 @@ void jack_bauer(void)
 	int k = 0;
 	int l = 0;
 
-	while (i != 2 && j != 4)
+	while (!(i > 2))
 	{
 		_putchar(i + '0');
 		_putchar(j + '0');
@@ -19,6 +19,11 @@ void jack_bauer(void)
 		_putchar(k + '0');
 		_putchar(l + '0');
 		++l;
+
+		if (i == 2 && j == 3 && k == 5 && l > 9)
+		{
+			break;
+		}
 		if (l > 9)
 		{
 			k = k + 1;
@@ -29,14 +34,10 @@ void jack_bauer(void)
 			j = j + 1;
 			k = 0;
 		}
-		if (j > 9 && i < 2)
+		if (j > 9)
 		{
 			i = i + 1;
 			j = 0;
-		}
-		if (i == 2 && j == 3 && k == 5 && l == 9)
-		{
-			break;
 		}
 		_putchar('\n');
 	}
