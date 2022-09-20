@@ -9,15 +9,12 @@ int _islower(int c)
 {
 	int i = 0;
 	int j = 0;
-
-	for (i = 97; i <= 122; i++)
+	if (c >= 'a' && <='z')
 	{
-		if (c == i)
-		{
-			j = 1;
-		}
-		else
-			j = 0;
+		j = 1;
+	}
+	else
+		j = 0;
 
 	}
 	return (j);
