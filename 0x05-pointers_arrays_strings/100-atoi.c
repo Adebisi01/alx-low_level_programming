@@ -11,7 +11,7 @@ int _atoi(char *s)
 	int j;
 	int hasDigit = 0;
 
-	atoi(s);
+	printf("%d", atoi(s));
 	while (*(s + i))
 	{
 		i++;
