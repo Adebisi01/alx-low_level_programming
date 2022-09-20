@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - prints time in a day
- * Return: void 
+ * Return: void
  */
 void jack_bauer(void)
 {
