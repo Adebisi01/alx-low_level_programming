@@ -17,7 +17,7 @@ int _atoi(char *s)
 	}
 	for (j = 0; j <= i; j++)
 	{
-		if ((*(s + j)) >= "0" && (*(s + j)) <= "9")
+		if ((*(s + j)) >= '0' && (*(s + j)) <= '9')
 		{
 			printf("%d", *(s + j));
 			hasDigit = 1;
