@@ -4,7 +4,7 @@
  * _strcat - concstenates two string
  * @dest: destination
  * @src: src
- * Return:
+ * Return: dest
  */
 char *_strcat(char *dest, char *src)
 {
@@ -12,18 +12,19 @@ char *_strcat(char *dest, char *src)
 	int lenDest = 0;
 
 
-	for (; (*(dest + lenDest) != '\0'; lenDest++)
+	while ((*(dest + lenDest) != '\0')
 	{
+		lenDest++;
 	}
-	while (true)
+	while (1 == 1)
 	{
 		*(dest + lenDest) = *(src + lenSrc);
-		if(*(src + lenSrc)) == '\0')
+		if (*(src + lenSrc)) == '\0')
+		{
 			break;
+		}
 		lenSrc++;
 		lenDest++;
 	}
-
 	return (dest);
-
 }
