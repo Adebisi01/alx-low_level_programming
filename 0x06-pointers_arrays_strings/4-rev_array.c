@@ -15,7 +15,7 @@ void reverse_array(int *a, int n)
 		if (i == n - i)
 			break;
 		temp = *(a + n - i - 1);
-		*(a + n - i - 1) = *(a + 1);
+		*(a + n - i - 1) = *(a + i);
 		*(a + i) = temp;
 	}
 }
