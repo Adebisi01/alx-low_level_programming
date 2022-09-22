@@ -13,9 +13,11 @@ char *cap_string(char *s)
 	while (s[i] != '\0')
 	{
 		if (j == 1)
+		{
 			s[i] = (s[i] - 32);
 			j = 0;
-		if (s[i] == '\n' || s[i] == '.')
+		}
+		if (s[i] == 32 || s[i] == 46)
 			j = 1;
 		i++;
 	}
