@@ -9,7 +9,7 @@ char *leet(char *s)
 {
 	int cap[] = {'A', 'E', 'O', 'T', 'L'};
 	int small[] = {'a', 'e', 'o', 't', 'l'};
-	int rep[] = {4, 3, 0, 7, 1};
+	int rep[] = {'4', '3', '0', '7', '1'};
 	int i;
 	int j;
 
