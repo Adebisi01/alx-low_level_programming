@@ -11,7 +11,7 @@ char *leet(char *s)
 	int small[] = {'a', 'e', 'o', 't', 'l'};
 	int rep[] = {4, 3, 0, 7, 1};
 	int i;
-	int l;
+	int j;
 
 	for (i = 0; *(s + 1) != '\0'; i++)
 	{
