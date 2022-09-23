@@ -18,7 +18,7 @@ char *cap_string(char *s)
 			j = 0;
 		}
 		j = 0;
-		if (s[i] == 32 || s[i] == 46)
+		if (s[i] == 32 || s[i] == 46 || s[i] == '\n' || s[i] == '\t')
 			j = 1;
 		i++;
 	}
