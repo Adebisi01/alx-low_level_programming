@@ -13,7 +13,7 @@ char *leet(char *s)
 	int i;
 	int j;
 
-	for (i = 0; *(s + 1) != '\0'; i++)
+	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		for (j = 0; j < 5; j++)
 		{
