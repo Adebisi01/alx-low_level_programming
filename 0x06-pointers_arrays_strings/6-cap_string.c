@@ -17,6 +17,7 @@ char *cap_string(char *s)
 			s[i] = (s[i] - 32);
 			j = 0;
 		}
+		j = 0;
 		if (s[i] == 32 || s[i] == 46)
 			j = 1;
 		i++;
