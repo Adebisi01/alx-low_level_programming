@@ -7,8 +7,8 @@
  */
 char *leet(char *s)
 {
-	char cap[] = {'A', 'E', 'O', 'T', 'L'};
-	char small[] = {'a', 'e', 'o', 't', 'l'};
+	int cap[] = {'A', 'E', 'O', 'T', 'L'};
+	int small[] = {'a', 'e', 'o', 't', 'l'};
 	int rep[] = {4, 3, 0, 7, 1};
 	int i;
 	int l;
@@ -18,7 +18,9 @@ char *leet(char *s)
 		for (j = 0; j < 5; j++)
 		{
 			if (*(s + i) == cap[j] || *(s + i) == small[j])
+			{
 				*(s + i) = rep[j];
+			}
 		}
 	}
 	return (s);
