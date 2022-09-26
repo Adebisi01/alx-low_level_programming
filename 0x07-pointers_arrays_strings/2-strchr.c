@@ -10,17 +10,17 @@ char *_strchr(char *s, char c)
 {
 	int i;
 	int strlen;
-	int *ptr;
+	char *ptr;
 
 	for (strlen = 1; *(s + strlen) != '\0'; strlen++)
 		;
 	for (i = 0; i < strlen; i++)
 	{
-		if (*(strlen + i) == c)
-			ptr = &(*(strlen + i));
+		if (*(s + i) == c)
+			ptr = &(*(s + i));
 		else
 			ptr = NULL;
 	}
-	return (*ptr);
+	return (ptr);
 }
 
