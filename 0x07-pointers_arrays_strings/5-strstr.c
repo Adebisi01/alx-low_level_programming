@@ -10,7 +10,6 @@
 char *_strstr(char *haystack, char *needle)
 {
 	int i;
-	int j;
 	int f = 0;
 	int ndllen = 0;
 
@@ -24,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 		f = 1;
 		if (*(needle + i) == '\0' && f == 1)
 		{
-			return (haystack + i - ndllen);
+			return (needle);
 		}
 	}
 	return ('\0');
