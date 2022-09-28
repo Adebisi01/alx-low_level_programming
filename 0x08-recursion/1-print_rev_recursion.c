@@ -7,14 +7,21 @@
  */
 void _print_rev_recursion(char *s)
 {
-	int i = -1;	
-
-	if (*(s + i) == '\n')
+	int i = 0;
+	int j = 0;
+	
+	if (*(s + i) != '\0')
+	{
+		i++;
+		_print_rev_recursion(s + i);
+	}
+	j = i;
+	if (*(s + j) == '\n')
 	{
 		_putchar('\n');
 		return;
 	}
-	_putchar(*(s + i));
-	i--;
-	_print_rev_recursion(s + i);
+	_putchar(*(s + j));
+	j--;
+	_print_rev_recursion(s + j);
 }
