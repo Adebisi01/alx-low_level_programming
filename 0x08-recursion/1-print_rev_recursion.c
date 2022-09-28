@@ -10,7 +10,7 @@ void _print_rev_recursion(char *s)
 	int i = 0;
 	int close = 0;
 	
-	if (*s == '\0' && close = 0)
+	if (*s != '\0' && close == 0)
 	{
 		i = (1 + _print_rev_recursion(s + 1));
 	}
