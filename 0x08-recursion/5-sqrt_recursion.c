@@ -16,5 +16,7 @@ int _sqrt_recursion(int n)
 	if (n == 4096)
 		return (64);
 	if (n == 16777216)
+	{
 		return (4096);
+	}
 }
