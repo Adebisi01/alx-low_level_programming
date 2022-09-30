@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
 	if (!isdigit(atoi(argv[1])) || !isdigit(atoi(argv[2])))
 	{
 		printf("Error\n");
-		return (1)
+		return (1);
 	}
 	if (!isdigit(atoi(argv[1])) && !isdigit(atoi(argv[2])))
 	{
