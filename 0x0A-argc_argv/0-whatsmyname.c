@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * whatsmyname - prints its own name
+ * main - prints its own name
  * @argv: argv
  * @argc: argc
  * Return: nothing
