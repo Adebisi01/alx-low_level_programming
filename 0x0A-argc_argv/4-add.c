@@ -3,16 +3,14 @@
 #include <string.h>
 #include <ctype.h>
 /**
- * main - prints its own name
  * isAlpha - checks for alphabets
  * @s: character
- * @argv: argv
- * @argc: argc
- * Return: nothing
+ * Return: 0 or 1
  */
 int isAlpha(char *s)
 {
 	int i;
+
 	for (i = 0; *(s + i) != '\0'; i++)
 	{
 		if (*(s + i) < '0' || *(s + i) > '9')
@@ -21,11 +19,18 @@ int isAlpha(char *s)
 	}
 	return (0);
 }
+/**
+ * main - main function
+ * @argc: argc
+ * @argv: argv
+ * Return: 0 or 1
+ */
+
 
 int main(int argc, char *argv[])
 {
 	int i;
-	int total = 0; 
+	int total = 0;
 
 	if (argc <= 1)
 	{
