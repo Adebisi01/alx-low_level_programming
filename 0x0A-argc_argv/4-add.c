@@ -19,6 +19,11 @@ int main(int argc, int *argv[])
 
 	for (i = 1; i <= argc; i++)
 	{
+		if (argv[i] < '0' || argv[i] > '9')
+		{
+			printf("Error\n");
+			return (1);
+		}
 		total += argv[i];
 	}
 	printf("%d\n", total);
