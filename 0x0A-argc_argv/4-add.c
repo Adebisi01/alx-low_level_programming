@@ -7,27 +7,20 @@
  * @argc: argc
  * Return: nothing
  */
-int main(int argc, char *argv[])
+int main(int argc, int *argv[])
 {
-	if (argc != 3)
-	{
-		printf("Error\n");
-		return (1);
-	}
-	if (!isdigit(atoi(argv[1])) || !isdigit(atoi(argv[2])))
-	{
-		printf("Error\n");
-		return (1);
-	}
-	if (!isdigit(atoi(argv[1])) && !isdigit(atoi(argv[2])))
+	int i = 1;
+	int total = 0;
+
+	if (argc <= 1)
 	{
 		printf("%d\n", 0);
 	}
-	if (argv <= 1)
+
+	for (i = 1; i <= argc; i++)
 	{
-		printf("%d\n", 0);
-		return (0);
+		total += argv[i];
 	}
-	printf("%d\n", atoi(argv[1]) + atoi(argv[2]));
-	return (0);
+	printf("%d\n", total);
+
 }
