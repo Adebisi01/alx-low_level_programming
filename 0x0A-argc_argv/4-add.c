@@ -7,10 +7,10 @@
  * @argc: argc
  * Return: nothing
  */
-int main(int argc, int *argv[])
+int main(int argc, char* argv[])
 {
 	int i = 1;
-	int total = 0;
+	int total = 0; 
 
 	if (argc <= 1)
 	{
@@ -19,13 +19,13 @@ int main(int argc, int *argv[])
 
 	for (i = 1; i <= argc; i++)
 	{
-		if (argv[i] < '0' || argv[i] > '9')
+		if (atoi(argv[i]) < '0' || atoi(argv[i]) > '9')
 		{
 			printf("Error\n");
 			return (1);
 		}
-		total += argv[i];
+		total += atoi(argv[i]);
 	}
 	printf("%d\n", total);
-
+	return (1);
 }
