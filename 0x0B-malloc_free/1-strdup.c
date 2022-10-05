@@ -21,7 +21,7 @@ char *_strdup(char *str)
 		printf("cannot allocate %ld byte", sizeof(str));
 		return (NULL);
 	}
-	while (i < sizeof(str))
+	while (i < (sizeof(char) + (strlen(str) + 1))
 	{
 		space[i] = str[i];
 		i++;
