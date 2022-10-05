@@ -19,7 +19,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 
 	len = (sizeof(char) * (strlen(s1) + strlen(s2)));
-	space = malloc(len);
+	space = malloc(len + 1);
 	if (space == NULL)
 	{
 		return (NULL);
