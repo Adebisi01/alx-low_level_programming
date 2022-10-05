@@ -16,6 +16,10 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 	}
 	str = malloc(size);
+	if (str == NULL)
+	{
+		printf("Cannot allocate %d bytes", size);
+	}
 	while (i < size)
 	{
 		str[i] = c;
