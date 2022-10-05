@@ -13,9 +13,9 @@ char *str_concat(char *s1, char *s2)
 	unsigned int len;
 	char *space;
 
-	if (strlen(s1) == 0)
+	if (s1 == NULL)
 		s1 = "";
-	if (strlen(s2) == 0)
+	if (s2 == NULL)
 		s2 = "";
 
 	len = (sizeof(char) * (strlen(s1) + strlen(s2)));
