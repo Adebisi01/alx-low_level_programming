@@ -15,13 +15,13 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	space = malloc(sizeof(char) + (strlen(str) + 1));
+	space = malloc(sizeof(char) + (strlen(str)));
 	if (space == NULL)
 	{
 		printf("cannot allocate %ld byte", sizeof(str));
 		return (NULL);
 	}
-	while (i < (sizeof(char) + (strlen(str) + 1)))
+	while (i < (sizeof(char) + (strlen(str))))
 	{
 		space[i] = str[i];
 		i++;
