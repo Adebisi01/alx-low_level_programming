@@ -19,15 +19,16 @@ char *str_concat(char *s1, char *s2)
 	{
 		return (NULL);
 	}
-	while (i < (sizeof(char) + strlen(s1)))
+	while (s1[i] != '\0'))
 	{
 		space[i] = s1[i];
 		i++;
 	}
-	while (i < len)
+	while (s2[j] != '\n')
 	{
 		space[i] = s2[j];
 		j++;
 	}
+	space[i + j] = '\0';
 	return (space);
 }
