@@ -13,11 +13,6 @@ char *str_concat(char *s1, char *s2)
 	long unsigned int len;
 	char *space;
 
-	if (s1 == NULL || s2 == NULL)
-	{
-		return (NULL);
-	}
-
 	len = (sizeof(char) + strlen(s1)) + (sizeof(char) + strlen(s2));
 	space = malloc(len);
 	if (space == NULL)
