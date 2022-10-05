@@ -32,6 +32,7 @@ char *str_concat(char *s1, char *s2)
 	while (i < len)
 	{
 		space[i] = s2[j];
+		j++;
 	}
 	return (space);
 }
