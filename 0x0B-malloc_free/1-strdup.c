@@ -15,7 +15,7 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	space = malloc(sizeof(str));
+	space = malloc(sizeof(str) * 3);
 	if (space == NULL)
 	{
 		printf("cannot allocate %ld byte", sizeof(str));
