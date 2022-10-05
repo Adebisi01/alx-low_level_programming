@@ -7,7 +7,7 @@
  */
 char *_strdup(char *str)
 {
-	int i = 0;
+	unsigned int i = 0;
 	char *space;
 
 	space = malloc(sizeof(str));
