@@ -8,9 +8,9 @@
  */
 char *str_concat(char *s1, char *s2)
 {
-	long unsigned int i = 0;
-	long unsigned int j = 0;
-	long unsigned int len;
+	unsigned int i = 0;
+	unsigned int j = 0;
+	unsigned int len;
 	char *space;
 
 	len = (sizeof(char) + strlen(s1)) + (sizeof(char) + strlen(s2));
