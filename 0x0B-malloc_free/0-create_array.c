@@ -20,7 +20,7 @@ char *create_array(unsigned int size, char c)
 	if (str == NULL)
 	{
 		printf("Cannot allocate %d bytes", size);
-		return (1);
+		return (NULL);
 	}
 	while (i < size)
 	{
