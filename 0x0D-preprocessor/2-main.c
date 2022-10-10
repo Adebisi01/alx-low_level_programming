@@ -4,7 +4,7 @@
  * main - prints the name file was compiled from
  * Return: nothing
  */
-void main(void)
+int main(void)
 {
 	printf("%s\n", __FILE__);
 }
