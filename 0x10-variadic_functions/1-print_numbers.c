@@ -1,7 +1,7 @@
 #include "variadic_functions.h"
 /**
  * print_numbers - prints out each number
- * @seperator: seprates numbers
+ * @separator: seprates numbers
  * @n: number of integers
  * @...: integers
  */
@@ -15,7 +15,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	{
 		printf("%d", va_arg(list, int));
 		if (separator != NULL && i < n - 1)
-			printf("%s",separator);
+			printf("%s", separator);
 
 	}
 	va_end(list);
