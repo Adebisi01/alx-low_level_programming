@@ -2,7 +2,8 @@
 /**
  * delete_nodeint_at_index - delete index node
  * @head: start
- * @index: index;
+ * @index: index
+ * Return: 1 0r -1
  */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
@@ -17,7 +18,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 		if (i == index)
 		{
 			if (temp == NULL)
-				return(-1);
+				return (-1);
 			free(temp);
 			return (1);
 		}
