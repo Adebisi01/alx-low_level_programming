@@ -3,7 +3,8 @@
  * insert_nodeint_at_index - insert a new node at index
  * @head: start
  * @idx: index
- * @n:
+ * @n: n
+ * Return: pointer to new node;
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
@@ -11,7 +12,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	listint_t *temp;
 	unsigned int i = 2;
 
-	if(head == NULL)
+	if (head == NULL)
 		return (NULL);
 
 	new = malloc(sizeof(listint_t));
